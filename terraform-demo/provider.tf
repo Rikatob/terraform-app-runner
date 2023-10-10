@@ -5,4 +5,12 @@ terraform {
       version = "4.33.0"
     }
   }
+  backend "s3" {
+    bucket = "pgr301-2021-terraform-state"
+    key    = "${var.bucket_name}/apprunner-lab.state"
+    region = "eu-west-1"
+  }
 }
+
+
+
