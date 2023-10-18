@@ -7,8 +7,8 @@ terraform {
   }
   backend "s3" {
     bucket = "pgr301-2021-terraform-state"
-    key    = "${var.bucket_name}/apprunner-lab.state"
-    region = "eu-west-1"
+    key    = "frno014-bucket/apprunner-lab.state"
+    region = "eu-north-1"
   }
 }
 
